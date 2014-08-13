@@ -1,0 +1,12 @@
+<head>
+	<title>HOME</title>
+</head>
+
+<body>
+	<% User.create(:fname => "New User") %>
+	Welcome, <b><%= User.last.fname%>!</b>
+	<br>
+	Your user ID is: <%= User.last.id %>
+
+
+</body>
