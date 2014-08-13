@@ -13,6 +13,5 @@ end
 
 get '/home' do
 	@user = User.last
-
 	erb :page2
 end	

@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140813000554) do
+ActiveRecord::Schema.define(version: 20140813140449) do
+
+  create_table "profiles", force: true do |t|
+    t.string  "user_name"
+    t.integer "age"
+    t.string  "location"
+    t.string  "gender"
+  end
 
   create_table "users", force: true do |t|
     t.string "fname"
